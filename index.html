@@ -6,15 +6,29 @@
     <link rel="stylesheet" href="build/css/stylesheet.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>PDX Doctors</title>
+    <title>Zip Doctor</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>List of Doctors in the Portland Area</h1>
+    <div class="container-fluid">
+        <div class="jumbotron banner">
+          <h1>Zip Doctor</h1>
+          <h2>Find a Dr. near you</h2>
+        </div>
+      <div class="main-form">
+        <center id="search-form">
+          <form>
+            <label for="zip"><h2>Please enter your Zip</h2></label>
+            <br>
+            <input class="form-control"type="text" name="zip" value="">
+            <br>
+            <button type="button" class="btn btn-success">Search!</button>
+          </form>
+      </center>
       </div>
-      <div class="doctors">
+      <div class="container">
+        <div class="doctors">
 
+        </div>
       </div>
     </div>
   </body>

@@ -1,5 +1,28 @@
+$grid-width: 325px;
+
 .doctors {
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: $grid-width $grid-width $grid-width;
+  grid-template-rows: 150%;
+  grid-gap: 45px;
   width: 100%;
+}
+
+.main-form{
+  margin-top: -50px;
+  background-color: #80deea;
+  height: 450px;
+  width: 100%;
+}
+
+.banner{
+  text-align: center;
+}
+
+.form-control{
+  width: 25%;
+}
+
+#search-form{
+  padding-top: 125px;
 }
