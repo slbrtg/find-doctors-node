@@ -2,8 +2,8 @@ const Doctor = require('./../js/doctor.js').DoctorModule;
 const apiKey = require('./../.env').apiKey;
 
 function displayData(fullName, specialties, offices){
-  let specialtiesString = specialties.join(",");
-  let officesString = offices.join("<br>");
+  const specialtiesString = specialties.join(",");
+  const officesString = offices.join("<br>");
   $('.doctors').append(
     "<div class = 'doctor'>" +
     "<h1>Dr." +
@@ -19,5 +19,10 @@ function displayData(fullName, specialties, offices){
 
 $(document).ready(function(){
   const doctor = new Doctor();
-  doctor.findDoctor("", displayData);
+  $("#search").click(function(){
+    const location = $('.city').val();
+    console.log(location);
+    $('.doctors').empty();
+    doctor.findDoctor("", location, displayData);
+  });
 });

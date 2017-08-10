@@ -4,14 +4,17 @@ function Doctor(){
 
 }
 
-Doctor.prototype.findDoctor = function(medicalIssue, displayData){
-  $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ medicalIssue+'&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
+Doctor.prototype.findDoctor = function(medicalIssue,location,displayData){
+  $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+
+  medicalIssue +
+  '&location=' +
+  location + '&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
    .then(function(result) {
       console.log(result);
       let fullName = "";
       let specialties = [];
       let offices = [];
-      for (let x = 12; x <= 19; x++){
+      for (let x = 0; x <= 19; x++){
         let specialtiesLength = 0;
         let officesLength = 0;
         fullName = result.data[x]["profile"]["first_name"] +

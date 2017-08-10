@@ -17,11 +17,14 @@
       <div class="main-form">
         <center id="search-form">
           <form>
-            <label for="zip"><h2>Please enter your Zip</h2></label>
+            <label for="city"><h2>Please select a city</h2></label>
             <br>
-            <input class="form-control"type="text" name="zip" value="">
-            <br>
-            <button type="button" class="btn btn-success">Search!</button>
+            <select class="city" name="city">
+              <option value="ca-los-angeles">Los Angeles</option>
+              <option value="wa-seattle">Seattle</option>
+              <option value="il-chicago">Chicago</option>
+            </select>
+            <button id="search" type="button" class="btn btn-success">Search!</button>
           </form>
       </center>
       </div>
