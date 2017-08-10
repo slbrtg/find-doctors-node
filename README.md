@@ -1,6 +1,6 @@
-# _PDX Doctor List_
+# _Zip Doctor_
 
-#### _An app that lists the some information of doctors in the pdx area_
+#### _An app that lists the some information of doctors in the greater Seattle, Los Angeles, and Chiacgo areas_
 
 #### By _**Saul Artiga**_
 
@@ -13,8 +13,8 @@ _Lists doctor names, specialties, and office locations._
 * _Clone this repository:_
 ```
 $ cd ~/Desktop
-$ git clone https://github.com/slbrtg/pdx-doctors-node.git
-$ cd pdx-doctors-node
+$ git clone https://github.com/slbrtg/find-doctors-node.git
+$ cd find-doctors-node
 ```
 * _Run the terminal command:_
 ```
@@ -25,7 +25,7 @@ $ bash kickstart-node.sh
 $ gulp serve
 ```
 ## Known Bugs
-_The API responses in a for loop are inconsistent, therefore only some doctors show up somewhat consistently. Also, why there isn't a full 20 doctors being displayed. The API would respond from the console._
+_None at this time_
 
 ## Support and contact details
 _For questions or feedback, please notify Saul @ slbrtg@gmail.com_
