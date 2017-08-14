@@ -1,7 +1,7 @@
 {
   "name": "find-doctor-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### _An app that lists the some information of doctors in the greater Seattle, Los Angeles, and Chiacgo areas_",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +22,13 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.5",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slbrtg/find-doctors-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slbrtg/find-doctors-node/issues"
+  },
+  "homepage": "https://github.com/slbrtg/find-doctors-node#readme"
 }

@@ -6,7 +6,7 @@
     "Saul Artiga <slbrtg@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/slbrtg/find-doctors-node",
   "ignore": [
     "**/.*",
     "node_modules",

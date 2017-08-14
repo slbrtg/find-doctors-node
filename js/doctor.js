@@ -34,7 +34,7 @@ Doctor.prototype.findDoctor = function(medicalIssue,location,displayData){
       }
     })
    .fail(function(error){
-      $('.doctors').append("<h1>There was an error pulling all doctor information</h1>");
+      $('.doctors').append("<h1></h1>");
     });
 };
 exports.DoctorModule = Doctor;

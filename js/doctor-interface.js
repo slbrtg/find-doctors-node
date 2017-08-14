@@ -20,9 +20,11 @@ function displayData(fullName, specialties, offices){
 $(document).ready(function(){
   const doctor = new Doctor();
   $("#search").click(function(){
+    const medicalIssue = $('#medicalIssue').val();
     const location = $('.city').val();
+    console.log(medicalIssue);
     console.log(location);
     $('.doctors').empty();
-    doctor.findDoctor("", location, displayData);
+    doctor.findDoctor(medicalIssue, location, displayData);
   });
 });
